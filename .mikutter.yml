@@ -1,0 +1,10 @@
+---
+slug: :popup_notifier
+depends:
+  plugin:
+  - notify
+version: '1.0'
+author: firstspring
+name: Popup Notifier
+description: ポップアップ通知プラグイン
+

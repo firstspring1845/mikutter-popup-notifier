@@ -1,0 +1,15 @@
+* なにこれ
+  libnotifyが使えず通知がでない環境でもポップアップ通知を出すプラグインです。GTKの機能とmikutterの通知イベントしか使ってないのでmikutterが動けば動くと思います。
+
+* インストール
+  pluginディレクトリに移動し以下のコマンドを実行する、もしくはpluginディレクトリ直下にpopup_notifier.rbを投げ込んでください。
+
+#+BEGIN_SRC sh
+  $ git clone https://github.com/firstspring1845/mikutter-popup-notifier.git popup_notifier
+#+END_SRC
+
+* 使い方
+  mikutterの通知イベントをフックしてるので通知タブの設定をするだけです。
+
+* その他
+  Krile Mystiqueの通知を勝手に参考にさせていただきましたごめんなさい。
