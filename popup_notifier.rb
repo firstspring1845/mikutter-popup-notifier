@@ -38,7 +38,7 @@ Plugin.create :popup_notifier do
     frame.modify_bg(Gtk::STATE_NORMAL, Gdk::Color.new(0,0,0))
     f.put(frame,0,0)
 
-    i = Gtk::Image.new Gdk::WebImageLoader.pixbuf(user[:profile_image_url], 48, 48){|i|}
+    i = Gtk::Image.new Gdk::WebImageLoader.pixbuf(user[:profile_image_url], 48, 48){|p|if not i.destroyed? then i.set(p,nil) end }
     layout = Gtk::Layout.new
     layout.set_size_request(48,48)
     layout.modify_bg(Gtk::STATE_NORMAL, Gdk::Color.new(65535,65535,65535))
