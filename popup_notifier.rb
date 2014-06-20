@@ -1,7 +1,5 @@
 Plugin.create :popup_notifier do
 
-  puts 'call'
-
   #(352,50),(8,8)
 
   w = Gtk::Window.new
