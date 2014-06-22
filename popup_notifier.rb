@@ -51,7 +51,7 @@ Plugin.create :popup_notifier do
     t << "\n"
     t << text.to_s.gsub("\n","").gsub("&lt;","<").gsub(/&(gt|lt|quot|amp);/){|m| {'gt' => '>', 'lt' => '<', 'quot' => '"', 'amp' => '&'}[$1] }
     l = Gtk::Label.new(t)
-    font = Pango::FontDescription.new(Plugin.filtering(:message_font, text, nil).last)
+    font = Pango::FontDescription.new(UserConfig[:mumble_basic_font])
     l.modify_font(font)
     layout = Gtk::Layout.new
     layout.set_size_request(302,48)
